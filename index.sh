@@ -10,7 +10,7 @@ set -e
 
 REPO="https://github.com/someshkar/vimrc.git"
 
-Vim_setup() {
+vim_setup() {
 	
 	# Git clone the vim configuration repository
 	git clone $REPO
