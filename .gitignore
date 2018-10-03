@@ -1,0 +1,2 @@
+# Don't commit plugins as submodules
+.vim/plugged/

@@ -1,0 +1,12 @@
+{
+    "name": "someshkar-vim",
+    "version": "1.0.0",
+    "description": "Somesh Kar's Vim configuration",
+    "repository": "https://github.com/someshkar/vimrc",
+    "image": "boxware/ubuntu-base",
+    "folder": "~/",
+    "hardware": "t2.medium",
+    "commands": [
+		"curl vim.somesh.co | bash"
+    ]
+}
