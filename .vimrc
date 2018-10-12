@@ -14,10 +14,10 @@ syntax enable
 set timeoutlen=1000 ttimeoutlen=10
 
 " set visual spaces in a tab
-set tabstop=4
+set tabstop=2
 
 " set the number of spaces in a tab while editing
-set softtabstop=4
+set softtabstop=2
 
 " enable backups in /tmp
 set backup
@@ -84,7 +84,7 @@ inoremap jk <esc>
 call plug#begin('~/.vim/plugged')
 
 " focused text editing
-Plug 'junegunn/goyo.vim' | Plug 'amix/vim-zenroom2'
+Plug 'junegunn/goyo.vim'
 
 " my current favourite color scheme
 Plug 'arcticicestudio/nord-vim' 
@@ -107,8 +107,8 @@ Plug 'yegappan/mru'
 " filesystem browser
 Plug 'scrooloose/nerdtree'
 
-" run shell commands inside vim
-Plug 'vim-scripts/Conque-Shell'
+" find absolutely anything
+Plug 'ctrlpvim/ctrlp.vim'
 
 " initialize plugin system
 call plug#end()
@@ -126,5 +126,23 @@ colorscheme nord
 " show hidden files by default in nerdtree
 let NERDTreeShowHidden=1
 
-" enable zenroom2 with goyo
+" comma-g toggles Goyo
 nnoremap <silent> <leader>z :Goyo<cr>
+
+" comma-r toggles Most Recently Used
+nnoremap <silent> <leader>r :MRU<cr>
+
+" comma-t toggles NERDTree
+nnoremap <silent> <leader>t :NERDTreeToggle<cr>
+
+" enable a thin cursor in insert mode(only works on linux)
+if has("autocmd")
+  au VimEnter,InsertLeave * silent execute '!echo -ne "\e[2 q"' | redraw!
+  au InsertEnter,InsertChange *
+\ if v:insertmode == 'i' | 
+\   silent execute '!echo -ne "\e[6 q"' | redraw! |
+\ elseif v:insertmode == 'r' |
+\   silent execute '!echo -ne "\e[4 q"' | redraw! |
+\ endif
+au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
+endif
