@@ -30,7 +30,7 @@ After that either source ~/.vimrc in your active Vim window, or just restart Vim
 :PlugInstall
 ```
 
-If you've got any changes you wouldd like to make to my vim config, or update it with stuff you like, feel free to submit a pull request via this repo.
+If you've got any changes you would like to make to my vim config or update it with stuff you like, feel free to submit a pull request via this repo.
 
 ## Credits
 
