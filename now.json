@@ -1,6 +1,8 @@
 {
+  "alias": "vim.somesh.co",
   "version": 2,
   "github": {
+    "autoAlias": false,
     "enabled": true,
     "silent": true
   },
