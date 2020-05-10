@@ -1,0 +1,23 @@
+{
+  "name": "someshs-vimrc",
+  "version": "1.0.0",
+  "description": "Quickly get up and running with Somesh's vim config.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/someshkar/vimrc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/someshkar/vimrc/issues"
+  },
+  "homepage": "https://github.com/someshkar/vimrc#readme",
+  "dependencies": {
+    "fastify": "^2.14.1"
+  }
+}
