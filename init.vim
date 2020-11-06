@@ -20,12 +20,14 @@ set nowritebackup
 " Set leader to comma
 let mapleader=","
 
-" Move vertically over 'fake' lines
-nnoremap j gj
-nnoremap k gk
-nnoremap <Down> gj
-nnoremap <Up> gk
-
+" Move vertically over 'fake' lines while also letting '10k' and '10j' work
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
+" nnoremap j gj
+" nnoremap k gk
+" nnoremap <Down> gj
+" nnoremap <Up> gk
+" ioqwjeoijqwejowiejoiqwjeoijqweiojioqwjojqwioejqwiojeoiqwjeiojqwioejioqwjioejqwiojeiojqwoiejqiowjeiojqwoiejqiowjeoiqjweiojqwoiejoiqwjeioqjweoiqowiejioqwjeoiqwjeoiqwjoeijwqoiejqwoejwqoiejoqwiejoqiwjeioqjwoeijqwoiejoiqwjeioqjweiojqwoiejoiwqjeoijqwoiejwoijeoqiwjeoijqwoeijoqwiejoiqwjeoiwqjioejqwoiejoiqwjeioqwjeoiqjweiojqwoeijqwoiejqowiejioqwjeqowejoqwijeoiqwjeoijqwoiejqwiojeoiqwjeoijqwoejoiqwjeoiqwjoiejqiowjeoiqwjewq
 " Lightline
 " Doesn't work if repositioned
 " let g:lightline = {
