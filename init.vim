@@ -43,6 +43,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 
+" Git integration so good, it should be illegal
+Plug 'tpope/vim-fugitive'
+
 " For distraction free writing
 Plug 'junegunn/goyo.vim'
 
