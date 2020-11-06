@@ -1,0 +1,37 @@
+{
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.disableSuccessMessage": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "json",
+    "svelte",
+    "prisma",
+    "elixir",
+    "css"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "html.autoClosingTags": true,
+  "html.filetypes": ["html", "handlebars", "htmldjango", "jst", "ejs"],
+  "languageserver": {
+    "ocaml-lsp": {
+      "command": "opam",
+      "args": ["config", "exec", "--", "ocamllsp"],
+      "filetypes": ["ocaml", "reason"]
+    }
+  },
+  "explorer.position": "floating",
+  "explorer.icon.enableNerdfont": true
+}
