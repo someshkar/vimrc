@@ -68,14 +68,6 @@ Plug 'pantharshit00/vim-prisma'
 
 call plug#end()
 
-" " NERDTree
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" " let g:NERDTreeMinimalUI = 1
-" let g:NERDTreeShowHidden = 1
-" let g:NERDTreeDirArrowExpandable=""
-" let g:NERDTreeDirArrowCollapsible=""
-
 " jk is escape
 inoremap jk <esc><Right>
 
