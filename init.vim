@@ -23,11 +23,7 @@ let mapleader=","
 " Move vertically over 'fake' lines while also letting '10k' and '10j' work
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
-" nnoremap j gj
-" nnoremap k gk
-" nnoremap <Down> gj
-" nnoremap <Up> gk
-" ioqwjeoijqwejowiejoiqwjeoijqweiojioqwjojqwioejqwiojeoiqwjeiojqwioejioqwjioejqwiojeiojqwoiejqiowjeiojqwoiejqiowjeoiqjweiojqwoiejoiqwjeioqjweoiqowiejioqwjeoiqwjeoiqwjoeijwqoiejqwoejwqoiejoqwiejoqiwjeioqjwoeijqwoiejoiqwjeioqjweiojqwoiejoiwqjeoijqwoiejwoijeoqiwjeoijqwoeijoqwiejoiqwjeoiwqjioejqwoiejoiqwjeioqwjeoiqjweiojqwoeijqwoiejqowiejioqwjeqowejoqwijeoiqwjeoijqwoiejqwiojeoiqwjeoijqwoejoiqwjeoiqwjoiejqiowjeoiqwjewq
+
 " Lightline
 " Doesn't work if repositioned
 " let g:lightline = {
@@ -68,16 +64,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Prisma 2 support
 Plug 'pantharshit00/vim-prisma'
 
-call plug#end()
+" Carbon
+Plug 'kristijanhusak/vim-carbon-now-sh'
 
-" jk is escape
-inoremap jk <esc><Right>
+call plug#end()
 
 " Go one character beyond the end of a line
 set virtualedit+=onemore
-
-" Make Nerdtree more usable
-" nmap n :NERDTreeToggle<CR>
 
 " Autotag
 let g:closetag_filenames = '*.html,*.js,*.css'
@@ -111,3 +104,4 @@ set ignorecase
 
 " Source other files
 source ~/.config/nvim/coc.vim
+source ~/.config/nvim/keybindings.vim

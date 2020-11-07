@@ -68,5 +68,5 @@ nmap <leader>rn <Plug>(coc-rename)
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " Explorer
-nmap <leader>t :CocCommand explorer<CR>
+nmap <leader>e :CocCommand explorer<CR>
 
