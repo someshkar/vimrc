@@ -9,7 +9,6 @@ set noshowmode
 set updatetime=100
 set timeoutlen=1000 ttimeoutlen=10
 set scrolloff=3
-set mouse=a
 set shortmess=atI
 
 " No BS
@@ -40,6 +39,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-css-color'
 
 " Git integration so good, it should be illegal
 Plug 'tpope/vim-fugitive'
@@ -49,11 +50,9 @@ Plug 'junegunn/goyo.vim'
 
 " Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-commentary'
-Plug 'itchyny/lightline.vim'
 
 " Plug 'dylanaraps/wal.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'ap/vim-css-color'
 
 " Better Go support
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
@@ -66,6 +65,21 @@ Plug 'pantharshit00/vim-prisma'
 
 " Carbon
 Plug 'kristijanhusak/vim-carbon-now-sh'
+
+" Wakatime
+Plug 'wakatime/vim-wakatime'
+
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
+
+" surround.vim
+Plug 'tpope/vim-surround'
+
+" Work better with tmux
+Plug 'christoomey/vim-tmux-navigator'
+
+" GitHub flavoured markdown
+Plug 'rhysd/vim-gfm-syntax'
 
 call plug#end()
 
@@ -103,5 +117,11 @@ set hlsearch
 set ignorecase
 
 " Source other files
-source ~/.config/nvim/coc.vim
-source ~/.config/nvim/keybindings.vim
+source ~/.config/nvim/keybindings.vim " my keybindings put in one place
+source ~/.config/nvim/functions.vim " helper functions
+
+source ~/.config/nvim/coc.vim " configuration for coc.nvim
+
+if (IsWSL())
+  source ~/.config/nvim/wsl.vim " only for when I use WSL2
+endif

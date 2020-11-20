@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/somesh/projects/exun/2020/website/exunclan.github.io/src/components/sponsors'
+let g:netrw_dirhist_8='/home/somesh/projects/exun/2020/sudo/sudo-2020/src/components'
+let g:netrw_dirhist_7='/home/somesh/projects/exun/2020/sudo/sudo-2020/data'
+let g:netrw_dirhist_6='/home/somesh/projects/exun/2020/website/exunclan.github.io/src/components/sponsors'
 let g:netrw_dirhist_5='/home/somesh/.config/nvim'
 let g:netrw_dirhist_4='/home/somesh/.config/nvim/plugged'
 let g:netrw_dirhist_3='/home/somesh/.config/nvim'
