@@ -19,7 +19,11 @@
     "svelte",
     "prisma",
     "elixir",
-    "css"
+    "css",
+    "c",
+    "cpp",
+    "objc",
+    "objcpp"
   ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
@@ -30,6 +34,22 @@
       "command": "opam",
       "args": ["config", "exec", "--", "ocamllsp"],
       "filetypes": ["ocaml", "reason"]
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
     }
   },
   "explorer.position": "floating",
