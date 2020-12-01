@@ -81,8 +81,11 @@ Plug 'christoomey/vim-tmux-navigator'
 " GitHub flavoured markdown
 Plug 'rhysd/vim-gfm-syntax'
 
-" Dart support
+" Dart language support
 Plug 'dart-lang/dart-vim-plugin'
+
+" Crystal language support
+Plug 'vim-crystal/vim-crystal'
 
 call plug#end()
 
