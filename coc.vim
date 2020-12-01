@@ -15,8 +15,8 @@ let g:coc_global_extensions = [
 	\ 'coc-elixir',
   \ 'coc-explorer',
   \ 'coc-prettier',
-  \ 'coc-eslint',
   \ 'coc-go',
+  \ 'coc-styled-components',
   \ ]
 
 " if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
@@ -70,3 +70,5 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Explorer
 nmap <leader>e :CocCommand explorer<CR>
 
+" Open historical yank list
+nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>

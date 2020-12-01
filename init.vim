@@ -81,6 +81,9 @@ Plug 'christoomey/vim-tmux-navigator'
 " GitHub flavoured markdown
 Plug 'rhysd/vim-gfm-syntax'
 
+" Dart support
+Plug 'dart-lang/dart-vim-plugin'
+
 call plug#end()
 
 " Go one character beyond the end of a line

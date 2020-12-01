@@ -4,6 +4,9 @@ let mapleader=","
 " jk is escape
 inoremap jk <esc><Right>
 
+" space to quickly switch window panes
+nnoremap <Space> <C-w>
+
 " clears highlights
 nnoremap // :noh<return>
 
