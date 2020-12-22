@@ -21,6 +21,7 @@ augroup compileandrun
   " autocmd filetype python nnoremap <f5> :w <bar> :vnew <bar> :!python3 % <cr>
   autocmd filetype cpp nnoremap <f5> :w <bar> !g++ % <cr> :vnew <bar> :te exec "./a.out" <cr><cr>
   autocmd filetype cpp nnoremap <f6> :vnew <bar> :te exec "./a.out" <cr>
+  autocmd filetype rust nnoremap <f5> :w <bar> !rustc -o ./a.out % <cr> :vnew <bar> :te exec "./a.out" <cr><cr>
   autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
   autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
 augroup END

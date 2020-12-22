@@ -17,6 +17,7 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-go',
   \ 'coc-styled-components',
+  \ 'coc-rls',
   \ ]
 
 " if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
