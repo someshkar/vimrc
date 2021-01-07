@@ -25,3 +25,27 @@ augroup compileandrun
   autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
   autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
 augroup END
+
+" " Enable Flutter menu
+" call FlutterMenu()
+
+" Keybinds for the flutter CLI
+nnoremap <leader>fa :FlutterRun<cr>
+nnoremap <leader>fq :FlutterQuit<cr>
+nnoremap <leader>fr :FlutterHotReload<cr>
+nnoremap <leader>fR :FlutterHotRestart<cr>
+nnoremap <leader>fD :FlutterVisualDebug<cr>
+autocmd BufWritePost *.dart DartFmt
+
+" " Copy to system clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+nnoremap  <leader>yiw  "+yiw
+
+" " Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P

@@ -4,7 +4,7 @@ set number
 set title
 set nocompatible
 set showcmd
-set relativenumber
+" set relativenumber
 set noshowmode
 set updatetime=100
 set timeoutlen=1000 ttimeoutlen=10
@@ -25,9 +25,9 @@ nnoremap <expr> k v:count ? 'k' : 'gk'
 
 " Lightline
 " Doesn't work if repositioned
-" let g:lightline = {
-"      \ 'colorscheme': 'wombat',
-"      \ }
+let g:lightline = {
+     \ 'colorscheme': 'nord',
+     \ }
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
@@ -81,11 +81,17 @@ Plug 'christoomey/vim-tmux-navigator'
 " GitHub flavoured markdown
 Plug 'rhysd/vim-gfm-syntax'
 
-" Dart language support
+" Dart/flutter support
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
+Plug 'thosakwe/vim-flutter'
 
 " Crystal language support
 Plug 'vim-crystal/vim-crystal'
+
+" colorschemes
+" Plug 'drewtempelmeyer/palenight.vim'
 
 call plug#end()
 
@@ -105,7 +111,7 @@ set showmatch
 " Theme and Color
 set background=dark
 set termguicolors
-colorscheme deepspace
+colorscheme nord
 
 " Indentation
 set tabstop=2
